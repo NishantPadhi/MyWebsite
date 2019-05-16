@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
+ 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
  
  
 </head>
@@ -22,6 +22,7 @@
 	<!--Header Section-->
 	<header>
 		<!-- Navbar  -->
+	
 			<nav class="navbar fixed-top navbar-expand-sm navbar-light transparent">
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Togglenavigation">
@@ -58,7 +59,7 @@
 	</header>
 	<!--End of Header Section-->
 	<!--Skill Section-->
-	<section id="skills" class="container-fluid text-center">
+	<section data-aos="fade-left" data-aos-duration="3000" id="skills" class="container-fluid text-center">
 		<div class="title">
 			<h1 class="display-4">Skills</h1>
 			<div class="title-underline"></div>
@@ -111,7 +112,7 @@
 	</section>
 	<!--End of Skill Section-->
 	<!--About Section-->
-	<section id="about" class="container-fluid">
+	<section data-aos="fade-right" data-aos-duration="3000" id="about" class="container-fluid">
 		<div class="row">
 			
 		
@@ -130,7 +131,7 @@
 
 	<!--End of About Section-->
 	<!--Projects Section-->
-	<section id="works" class="container-fluid text-center">
+	<section data-aos="fade-left" data-aos-duration="3000" id="works" class="container-fluid text-center">
 		<div class="title">
 			<h1 class="display-4">Works</h1>
 			<div class="title-underline"></div>
@@ -174,7 +175,7 @@
 	<!--End of Project Section-->
 
 	<!--contact Section-->
-		<section id="contact" class="container-fluid text-center">
+		<section id="contact" data-aos="fade-right" data-aos-duration="3000" class="container-fluid text-center">
 
 			<div class="title">
 			<h1 class="display-4">Contact Me</h1>
@@ -214,7 +215,7 @@
 
 
 	<!--footer Section-->
-	<section id="footer" class="container-fluid text-center">
+	<section data-aos="fade-left" data-aos-duration="3000" id="footer" class="container-fluid text-center">
 		<div class="title">
 			<h1 class="display-4">Nishant Padhi</h1>
 			<div class="title-underline"></div>
@@ -235,8 +236,10 @@
 	</section>
 	
 	<!--End of footer Section-->
-</body>
-<script type="text/javascript">
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript">
 	$(document).ready(function(){
  
     
@@ -248,5 +251,14 @@
 		$(this).removeClass('transition');
 	});
 });
+
+	AOS.init({
+		easing:'ease-in-out-sine'
+	});
+
+
+	
 </script>
+</body>
+
 </html>
