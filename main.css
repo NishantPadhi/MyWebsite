@@ -20,7 +20,7 @@ body
 .nav-link,.navbar-brand
 {
 	color: #F15025!important;
-	font-size: 30px;
+	font-size: 25px;
 }
 .navbar a:hover
 {
@@ -133,6 +133,39 @@ header
 	justify-content: center;
 }
 /*End of about*/
+/*Work Section*/
+ .thumb{
+            margin-bottom: 40px;
+        }
+        
+        .page-top{
+            margin-top:85px;
+        }
+        #work-div
+        {
+        	background-color: #203142 !important;
+        	
+        	padding: 20px;
+        }
+img.zoom {
+    width: 90%;
+    height: auto;
+    max-height: 300px;
+   
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+/*End of work section*/
+
 /*Contact*/
 #contact
 {
